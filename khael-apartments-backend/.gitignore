@@ -1,0 +1,24 @@
+``
+# Dependencies
+node_modules/
+
+# Environment variables (NEVER commit this!)
+.env
+
+# Database file
+src/database/*.db
+src/database/*.db-journal
+
+# Uploaded files (can commit or ignore based on preference)
+src/uploads/images/*
+src/uploads/videos/*
+!src/uploads/images/.gitkeep
+!src/uploads/videos/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
