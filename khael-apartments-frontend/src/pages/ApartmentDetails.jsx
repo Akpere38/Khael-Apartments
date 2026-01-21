@@ -183,7 +183,7 @@ function ApartmentDetails() {
               </p>
               <div className="space-y-2">
                 <a
-                  href={`https://wa.me/2348148510983?text=Hi!%20I'm%20interested%20in%20*${encodeURIComponent(apartment.title)}*%0A%0APrice:%20${encodeURIComponent(formatPrice(apartment.price_per_night))}/night%0ABedrooms:%20${apartment.bedrooms}%0ALocation:%20${encodeURIComponent(apartment.city)},%20${encodeURIComponent(apartment.state)}%0A%0ALink:%20${encodeURIComponent(window.location.href)}%0A%0AIs%20it%20available%20for%20[your%20dates]?`}
+                  href={`https://wa.me/2348148510983?text=Hi!%20I'm%20interested%20in%20this%20apartment:%0A%0A*${encodeURIComponent(apartment.title)}*%0A%0A📍%20Address:%20${encodeURIComponent(apartment.address)},%20${encodeURIComponent(apartment.city)}%0A💰%20Price:%20${encodeURIComponent(formatPrice(apartment.price_per_night))}/night%0A🛏️%20${apartment.bedrooms}%20Bedroom(s),%20${apartment.bathrooms}%20Bathroom(s)%0A👥%20Max%20${apartment.max_guests}%20guests%0A%0A🔗%20View%20details:%20${encodeURIComponent(window.location.href)}%0A%0AIs%20it%20available%20for%20my%20dates?`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-semibold"
